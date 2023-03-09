@@ -8,9 +8,10 @@ This repository contains for each BLE attack listed below an attack description 
 
 The code was executed on a Raspberry Pi 4 with kernel version 5.15.x.
 
-The compilation of the kernel followed the tutorial on https://www.stephenwagner.com/2020/03/17/how-to-compile-linux-kernel-raspberry-pi-4-raspbian/
+The compilation of the kernel followed [this] tutorial.
 
 [1]: https://eprint.iacr.org/2019/1043.pdf
 [2]: https://dl.acm.org/doi/pdf/10.1145/3394497
 [3]: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4401672
 [4]: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9152758
+[this] https://www.stephenwagner.com/2020/03/17/how-to-compile-linux-kernel-raspberry-pi-4-raspbian/
