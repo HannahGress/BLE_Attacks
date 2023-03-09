@@ -1869,7 +1869,7 @@ static u8 smp_cmd_pairing_req(struct l2cap_conn *conn, struct sk_buff *skb)
 static u8 sc_send_public_key(struct smp_chan *smp)
 {
 	struct hci_dev *hdev = smp->conn->hcon->hdev;
-	u8 * local_pk_copy [64];
+	u8 * local_pk_copy[64];
 
 	bt_dev_dbg(hdev, "");
 
@@ -1913,24 +1913,24 @@ static u8 sc_send_public_key(struct smp_chan *smp)
 
 done:
 
-	memcpy ( local_pk_copy , smp -> local_pk , 64) ;
-	memset (smp -> local_pk + 32, 0, 32) ;
+	memcpy(local_pk_copy, smp->local_pk, 64);
+	memset(smp->local_pk + 32, 0, 32);
 
-	SMP_DBG (" Before : %32 phN ", 0);
+	SMP_DBG("Before: %32phN", 0);
 	SMP_DBG("Local Public Key X: %32phN", smp->local_pk);
 	SMP_DBG("Local Public Key Y: %32phN", smp->local_pk + 32);
-	SMP_DBG (" Local Public Key Copy X: %32 phN ", local_pk_copy );
-	SMP_DBG (" Local Public Key Copy Y: %32 phN ", local_pk_copy + 32) ;
+	SMP_DBG("Local Public Key Copy X: %32phN", local_pk_copy);
+	SMP_DBG("Local Public Key Copy Y: %32phN ", local_pk_copy + 32) ;
 
 	smp_send_cmd(smp->conn, SMP_CMD_PUBLIC_KEY, 64, smp->local_pk);
 	
-	memcpy (smp -> local_pk , local_pk_copy , 64);
+	memcpy(smp->local_pk, local_pk_copy, 64);
 	
-	SMP_DBG (" After : %32 phN ", 0);
-	SMP_DBG (" Local Public Key X: %32 phN ", smp -> local_pk );
-	SMP_DBG (" Local Public Key Y: %32 phN ", smp -> local_pk + 32) ;
-	SMP_DBG (" Local Public Key Copy X: %32 phN ", local_pk_copy );
-	SMP_DBG (" Local Public Key Copy Y: %32 phN ", local_pk_copy + 32) ;
+	SMP_DBG("After : %32phN", 0);
+	SMP_DBG("Local Public Key X: %32phN", smp->local_pk);
+	SMP_DBG("Local Public Key Y: %32phN", smp->local_pk + 32);
+	SMP_DBG("Local Public Key Copy X: %32phN", local_pk_copy);
+	SMP_DBG("Local Public Key Copy Y: %32phN", local_pk_copy + 32);
 
 	return 0;
 }
@@ -2768,7 +2768,7 @@ static int smp_cmd_public_key(struct l2cap_conn *conn, struct sk_buff *skb)
 	memcpy(smp->remote_pk, key, 64);
 	
 	// set y- coordinate of remote pk to zero
-	memset (smp -> remote_pk + 32, 0, 32);
+	memset(smp->remote_pk + 32, 0, 32);
 
 	if (test_bit(SMP_FLAG_REMOTE_OOB, &smp->flags)) {
 		err = smp_f4(smp->tfm_cmac, smp->remote_pk, smp->remote_pk,
