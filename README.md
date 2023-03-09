@@ -1,7 +1,7 @@
 # BLE Attacks
 
-This repository contains for each BLE attack listed below an attack description and sometimes modified code to launch it:
-* Fixed Coordinate Invalid Curve Attack [[1]]
+This repository contains for each BLE attack listed below a short description about the necessary changes and sometimes modified code to launch it:
+* The Fixed Coordinate Invalid Curve Attack [[1]]
 * KNOB Attack [[2]]
 * Nino Man-In-The-Middle Attack [[3]]
 * Secure Connections Downgrade Attack [[4]]
