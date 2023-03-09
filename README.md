@@ -1,10 +1,10 @@
 # BLE Attacks
 
 This repository contains for each BLE attack listed below an attack description and sometimes modified code to launch it:
-* Fixed Coordinate Invalid Curve Attack [1]
-* KNOB Attack [2]
-* Nino Man-In-The-Middle Attack [3]
-* Secure Connections Downgrade Attack [4]
+* Fixed Coordinate Invalid Curve Attack [[1]]
+* KNOB Attack [[2]]
+* Nino Man-In-The-Middle Attack [[3]]
+* Secure Connections Downgrade Attack [[4]]
 
 The code was executed on a Raspberry Pi 4 with kernel version 5.15.x.
 
