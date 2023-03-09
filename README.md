@@ -14,4 +14,4 @@ The compilation of the kernel followed [this] tutorial.
 [2]: https://dl.acm.org/doi/pdf/10.1145/3394497
 [3]: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=4401672
 [4]: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9152758
-[this] https://www.stephenwagner.com/2020/03/17/how-to-compile-linux-kernel-raspberry-pi-4-raspbian/
+[this]: https://www.stephenwagner.com/2020/03/17/how-to-compile-linux-kernel-raspberry-pi-4-raspbian/
