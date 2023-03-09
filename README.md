@@ -6,6 +6,8 @@ This repository contains for each BLE attack listed below a short description ab
 * Nino Man-In-The-Middle Attack [[3]]
 * Secure Connections Downgrade Attack [[4]]
 
+The latter two can also be combined.
+
 The code was executed on a Raspberry Pi 4 with kernel version 5.15.x.
 
 The compilation of the kernel followed [this] tutorial.
